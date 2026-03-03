@@ -38,13 +38,49 @@ nav {
 .nav_logo {
     width: 50%;
     display: flex;
+    padding-left: 5%;
+    justify-content: space-between;
 }
 
 .nav_logo img {
     width: auto;
     height: 100%;
     position: relative;
-    left: 10%;
+    /* left: 10%; */
+}
+
+/* NAVIGATION SEARCHBAR DESIGN */
+
+.search {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_bar {
+    width: 80%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2% 0 0;
+}
+
+button {
+    height: 100%;
+    border: none;
+    width: 5%;
+    background: none;
+}
+
+input {
+    height: 80%;
+    width: auto;
+    border: none;
+    background: none;
 }
 
 /* NAVIGATION SELECION HERE */
@@ -71,14 +107,14 @@ ul {
     }
 }
 
-/* SECTION STYLE HERE*/
+/* SECTION ONE STYLE HERE*/
 
 section {
     display: flex;
     flex-direction: row;
 }
 
-section div {
+.section1 div {
     width: 50%;
 }
 
@@ -89,6 +125,7 @@ section div {
     align-items: center;
     flex-direction: column;
     padding: 20px;
+
     h1 {
         text-shadow: 3px 3px 0px rgb(0, 0, 0);
         text-align: center;
@@ -98,27 +135,73 @@ section div {
     h3 {
         text-shadow: 3px 3px 5px rgb(0, 0, 0);
         text-align: center;
-        
+
     }
 
-    P{
+    P {
         text-shadow: 3px 3px 5px rgb(0, 0, 0);
         text-align: justify;
     }
-    button{
+
+    button {
         align-items: center;
         width: 35%;
         height: 45px;
         border-radius: 25px;
         box-shadow: 5px 5px 5px skyblue;
+        background-color: #fff;
+        transition: 0.5s ease-out;
+    }
+
+    button:hover{
+        width: 37%;
+        box-shadow: -5px -5px 5px rgb(167, 235, 135);
     }
 }
 
-.sec1_part2 {
+.sec1_part2 {}
+
+.sec1_part2 img {
+    width: 90%;
+    height: 90%;
+        transition: 0.5s ease-out;
 
 }
 
-.sec1_part2 img {
-    width: 100%;
+/* SECTION TWO STYLE HERE*/
 
+.ts{
+    padding:50px 0px 50px 0px;
+    text-shadow: 3px 3px 0px rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section2_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    padding: 0% 2%;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.img_foci {
+    height: 90%;
+    width: 90%;
+    border: 2px solid skyblue;
+    box-shadow: 5px 5px 5px skyblue;
+    transition: 0.5s ease-out;
+}
+
+.img_foci:hover{
+    height: 100%;
+    width:100%;
 }
